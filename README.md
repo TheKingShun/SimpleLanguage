@@ -11,4 +11,4 @@
 
 ![Image text](https://github.com/TheKingShun/SimpleLanguage/blob/main/%406%7B%5D%5B0EKE%60%25IZ%25TZ04CVHVB.png)
 
-![Image text](https://github.com/TheKingShun/SimpleLanguage/blob/main/}OLINTT8~QE%B~[@4ZP_L{D.png)
+![Image text](https://github.com/TheKingShun/SimpleLanguage/blob/main/%7DOLINTT8~QE%25B~%5B%404ZP_L%7BD.png)
