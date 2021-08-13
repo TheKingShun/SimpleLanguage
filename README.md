@@ -8,3 +8,5 @@
 支持字符串乘法
 
 支持输出
+
+![Image text](https://github.com/TheKingShun/SimpleLanguage/blob/main/%406%7B%5D%5B0EKE%60%25IZ%25TZ04CVHVB.png)
