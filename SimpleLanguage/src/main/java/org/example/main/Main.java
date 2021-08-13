@@ -6,12 +6,9 @@ import org.antlr.v4.runtime.CommonTokenStream;
 import org.example.main.antlr.WSLexer;
 import org.example.main.antlr.WSParser;
 
+import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.LinkedList;
 import java.util.Map;
-import java.util.concurrent.DelayQueue;
 
 /**
  * @author HDU_WS
@@ -23,8 +20,20 @@ import java.util.concurrent.DelayQueue;
 
 public class Main {
     public static void main(String[] args) {
+        String filePath = args[0];
         try {
-            WSLexer lexer = new WSLexer(CharStreams.fromFileName("src/main/resources/mytest"));
+            File file = new File(filePath);
+            if (!file.exists()) {
+                System.err.println("文件不存在");
+                System.exit(1);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println("当前文件路径为：" + filePath);
+        try {
+            WSLexer lexer = new WSLexer(CharStreams.fromFileName(filePath));
+            // WSLexer lexer = new WSLexer(CharStreams.fromFileName("src/main/resources/mytest"));
             WSParser parser = new WSParser(new CommonTokenStream(lexer));
             parser.setBuildParseTree(true);
             WSParser.ParseContext tree = parser.parse();
@@ -42,25 +51,3 @@ public class Main {
 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
