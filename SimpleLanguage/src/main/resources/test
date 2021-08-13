@@ -1,0 +1,23 @@
+@:Main{
+    #:foo(a,b,c){
+        out("Hello World");
+        if [a > 6]->{
+            out("1");
+        }elif [a < 3]->{
+            out("3");
+        }else->{
+            out("2");
+        }
+        while[b]->{
+            out("true");
+            b = false;
+        }
+    }
+
+    #:bar(){
+        $:a = 1;
+        out(a);
+        foo(1,2,3);
+    }
+
+}

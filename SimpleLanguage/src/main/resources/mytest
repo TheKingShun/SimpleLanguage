@@ -1,0 +1,18 @@
+@:Main{
+     $:a = 10;
+     out(a);
+     $:b = 111;
+     out(b);
+     $:c = "Hello WS Language!!";
+     out(c);
+     $:d = a * b;
+     out(d);
+     $:e = c * 2;
+     out(e);
+     $:f = 10^2;
+     out("current result is :" + f);
+     $:g = 123 % 6;
+     out(g);
+     $:h = 1+2*3/4;
+     out(h);
+}
